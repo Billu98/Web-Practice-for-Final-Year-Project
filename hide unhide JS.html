@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Using The class Attribute in JavaScript</h2>
+<p>Click the button, to hide all elements with the class name "city", with JavaScript:</p>
+
+<button onclick="hide()"> Hide elements </button>
+<button onclick="unhide()"> Unhide elements</button>
+<h2 class="city" style="background-color: cadetblue; color: chartreuse ; padding: 10px;">London</h2>
+<p>London is the capital of England.</p>
+
+<h2 class="city" style="background-color: cadetblue; color: chartreuse ; padding: 10px;">Paris</h2>
+<p>Paris is the capital of France.</p>
+
+<h2 class="city" style="background-color: cadetblue; color: chartreuse ; padding: 10px;">Tokyo</h2>
+<p>Tokyo is the capital of Japan.</p>
+
+<script>
+   
+function hide() {
+    var temp = 0;
+    if(temp == 0){
+  var x = document.getElementsByClassName("city");
+  for (var i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+    temp = 1;
+  }
+  }
+}
+function unhide(){
+var x= document.getElementsByClassName("city");
+for(var i=0;i<x.length;i++){
+    x[i].style.display = 'block';
+    }
+}
+
+</script>
+
+</body>
+
+</html>
